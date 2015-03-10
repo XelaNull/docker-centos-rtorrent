@@ -3,7 +3,7 @@ FROM centos:latest
 MAINTAINER Jonathan Ervine <jon.ervine@gmail.com>
 ENV container docker
 
-# Install updates and enable EPEL and repoforge repositories for SABnzbd pre-requisites
+# Install updates and enable EPEL and nux-desktop repositories for rtorrent and rutorrent pre-requisites
 RUN yum update -y
 RUN yum install -y http://mirror.pnl.gov/epel/7/x86_64/e/epel-release-7-5.noarch.rpm
 RUN yum -y install http://li.nux.ro/download/nux/dextop/el7/x86_64/nux-dextop-release-0-5.el7.nux.noarch.rpm
