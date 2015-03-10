@@ -17,7 +17,6 @@ RUN chown -R apache:apache /ruTorrent-master/share/torrents
 RUN chown -R apache:apache /ruTorrent-master/share/settings
 
 ADD rutorrent.conf /etc/httpd/conf.d/rutorrent.conf
-ADD httpd.passwd /etc/httpd/httpd.passwd
 ADD start.sh /start.sh
 RUN chmod 755 /start.sh
 
