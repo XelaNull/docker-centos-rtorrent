@@ -19,12 +19,14 @@ RUN chown -R apache:apache /ruTorrent/share/torrents
 RUN chown -R apache:apache /ruTorrent/share/settings
 
 ADD rutorrent.conf /etc/httpd/conf.d/rutorrent.conf
-ADD start.sh /start.sh
-RUN chmod 755 /start.sh
+ADD start.sh /sbin/start.sh
+ADD supervisord.conf /etc/supervisord.conf
+ADD rtorrent.ini /etc/supervisord.d/rtorrent.ini
+RUN chmod 755 /sbin/start.sh
 
 EXPOSE 80 443 5000 9009
 
 VOLUME /config
 VOLUME /downloads
 
-CMD ["/start.sh"]
+CMD ["/sbin/start.sh"]
