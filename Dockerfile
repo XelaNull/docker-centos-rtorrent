@@ -21,7 +21,7 @@ RUN chown -R apache:apache /ruTorrent/share/settings
 ADD rutorrent.conf /etc/httpd/conf.d/rutorrent.conf
 ADD start.sh /sbin/start.sh
 ADD supervisord.conf /etc/supervisord.conf
-ADD apache.ini /etc/supervisord/apache.ini
+ADD apache.ini /etc/supervisord.d/apache.ini
 ADD rtorrent.ini /etc/supervisord.d/rtorrent.ini
 RUN chmod 755 /sbin/start.sh
 
