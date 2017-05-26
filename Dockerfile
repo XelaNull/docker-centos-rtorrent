@@ -7,6 +7,7 @@ ENV container docker
 RUN yum update -y
 RUN yum install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
 RUN curl http://negativo17.org/repos/epel-rar.repo -o /etc/yum.repos.d/epel-rar.repo
+RUN curl http://negativo17.org/repos/epel-multimedia.repo -o /etc/yum.repos.d/epel-multimedia.repo
 RUN yum install -y rtorrent httpd php unzip unrar mediainfo ffmpeg git supervisor
 RUN yum clean all
 
