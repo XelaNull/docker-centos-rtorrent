@@ -1,7 +1,7 @@
 # docker-centos-rtorrent
-## rtorrent with Apache and rutorrent running on CentOS 7.3
-### Build Version: 2
-Date of Build: 10th July 2017
+## rtorrent with Apache and rutorrent running on CentOS 7.4
+### Build Version: 3
+Date of Build: 15th September 2017
 
 The Dockerfile should intialise the CentOS image and subscribe to the EPEL, EPEL-rar, and EPEL-multimedia repositories (the last two are hosted on negativo17.org). The pre-requisites for rtorrent with rutorrent are then installed via yum.
 
